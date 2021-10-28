@@ -4,6 +4,7 @@ import static org.junit.Assert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -53,6 +54,11 @@ public class OrderManagerApplicationTests {
 		orderRepository.save(orderToEdit);
 
 		assertNotEquals(state, orderRepository.findById(orderToEdit.getId()).get().state);
+	}
+
+	@Test
+	public void getAll() {
+		assertTrue(orderRepository.count() > 1l);
 	}
 
 }
