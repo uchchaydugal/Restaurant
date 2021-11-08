@@ -1,19 +1,13 @@
 package com.restaurant.order_manager;
 
-import static org.junit.Assert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
-
 import java.time.LocalTime;
-
 import com.restaurant.order_manager.models.Order;
 import com.restaurant.order_manager.models.State;
 import com.restaurant.order_manager.repositories.IOrderRepository;
-import org.hamcrest.MatcherAssert;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
